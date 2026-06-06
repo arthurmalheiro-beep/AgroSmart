@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart - Cultivando o Futuro Verde</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-leaf">🌿</span>
+                <div>
+                    <span class="logo-name">AgroSmart</span>
+                    <span class="logo-tagline">Cultivando o Futuro</span>
+                </div>
+            </div>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#dicas">Práticas</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#inicio" onclick="closeMobileNav()">Início</a>
+            <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
+            <a href="#dicas" onclick="closeMobileNav()">Práticas</a>
+            <a href="#quiz" onclick="closeMobileNav()">Quiz</a>
+            <a href="#contato" onclick="closeMobileNav()">Contato</a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape s1"></div>
+            <div class="hero-shape s2"></div>
+            <div class="hero-shape s3"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">🌱 Agricultura Consciente</span>
+            <h1 class="hero-title">
+                A Terra cuida de nós.<br>
+                <em>Vamos cuidar dela.</em>
+            </h1>
+            <p class="hero-desc">
+                Descubra como práticas agrícolas sustentáveis podem alimentar o planeta,
+                preservar nossos recursos naturais e garantir um futuro mais verde para todos.
+            </p>
+            <div class="hero-actions">
+                <a href="#quiz" class="btn-primary">Fazer o Quiz 🧠</a>
+                <a href="#sobre" class="btn-ghost">Saber mais ↓</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">70%</span>
+                    <span class="stat-label">da água doce usada em agricultura</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">500M</span>
+                    <span class="stat-label">pequenos agricultores no mundo</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">30%</span>
+                    <span class="stat-label">das emissões vêm do agro</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="illus-field">
+                <div class="illus-row">🌾🌾🌾🌾🌾🌾🌾🌾</div>
+                <div class="illus-row">🌿🌿🌿🌿🌿🌿🌿🌿</div>
+                <div class="illus-row">🌱🌱🌱🌱🌱🌱🌱🌱</div>
+            </div>
+            <div class="illus-sun">☀️</div>
+            <div class="illus-cloud c1">☁️</div>
+            <div class="illus-cloud c2">☁️</div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-label">🌍 Entenda a causa</div>
+            <h2 class="section-title">O que é Agricultura Sustentável?</h2>
+            <p class="section-sub">
+                É a produção de alimentos de maneira responsável, equilibrando as necessidades humanas
+                com a preservação dos recursos naturais para as gerações futuras.
+            </p>
+
+            <div class="sobre-grid">
+                <div class="sobre-card reveal">
+                    <div class="card-icon">🌱</div>
+                    <h3>Solo Saudável</h3>
+                    <p>O solo vivo é a base de tudo. Práticas como compostagem e plantio direto preservam os microrganismos essenciais e evitam a erosão.</p>
+                </div>
+                <div class="sobre-card reveal">
+                    <div class="card-icon">💧</div>
+                    <h3>Água Consciente</h3>
+                    <p>O uso inteligente da água, com irrigação eficiente e captação da chuva, reduz o desperdício e protege os mananciais.</p>
+                </div>
+                <div class="sobre-card reveal">
+                    <div class="card-icon">🦋</div>
+                    <h3>Biodiversidade</h3>
+                    <p>Preservar insetos, pássaros e plantas nativas garante o equilíbrio do ecossistema e a polinização natural das lavouras.</p>
+                </div>
+                <div class="sobre-card reveal">
+                    <div class="card-icon">☀️</div>
+                    <h3>Energia Limpa</h3>
+                    <p>Integrar painéis solares e biogás nas propriedades rurais reduz custos e diminui a pegada de carbono da produção.</p>
+                </div>
+                <div class="sobre-card reveal">
+                    <div class="card-icon">🌿</div>
+                    <h3>Sem Agrotóxicos</h3>
+                    <p>O controle biológico de pragas e o uso de plantas companheiras eliminam a necessidade de produtos químicos prejudiciais.</p>
+                </div>
+                <div class="sobre-card reveal">
+                    <div class="card-icon">🤝</div>
+                    <h3>Comunidade Justa</h3>
+                    <p>A agricultura sustentável também cuida das pessoas: garante renda justa aos agricultores e alimentos seguros às comunidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DICAS ===== -->
+    <section id="dicas" class="dicas">
+        <div class="container">
+            <div class="section-label">🚜 Boas práticas</div>
+            <h2 class="section-title">6 Práticas para um Campo Mais Verde</h2>
+            <p class="section-sub">Ações simples que fazem grande diferença no campo e no meio ambiente.</p>
+
+            <div class="dicas-list">
+                <div class="dica-item reveal">
+                    <div class="dica-num">01</div>
+                    <div class="dica-content">
+                        <h3>Rotação de Culturas</h3>
+                        <p>Alternar diferentes tipos de plantas em um mesmo terreno preserva os nutrientes do solo, quebra ciclos de pragas e doenças, e aumenta a produtividade sem precisar de adubos artificiais.</p>
+                    </div>
+                    <div class="dica-emoji">🔄</div>
+                </div>
+                <div class="dica-item reveal">
+                    <div class="dica-num">02</div>
+                    <div class="dica-content">
+                        <h3>Compostagem Orgânica</h3>
+                        <p>Transformar cascas, folhas e restos de comida em adubo natural é uma forma de fechar o ciclo dos nutrientes. O composto melhora a estrutura do solo e reduz resíduos.</p>
+                    </div>
+                    <div class="dica-emoji">♻️</div>
+                </div>
+                <div class="dica-item reveal">
+                    <div class="dica-num">03</div>
+                    <div class="dica-content">
+                        <h3>Captação de Água da Chuva</h3>
+                        <p>Sistemas simples de calhas e cisternas permitem armazenar água das chuvas para irrigação. Isso reduz custos e alivia a pressão sobre rios e lençóis freáticos.</p>
+                    </div>
+                    <div class="dica-emoji">🌧️</div>
+                </div>
+                <div class="dica-item reveal">
+                    <div class="dica-num">04</div>
+                    <div class="dica-content">
+                        <h3>Agrofloresta</h3>
+                        <p>Integrar árvores, arbustos e culturas agrícolas cria um sistema produtivo que imita a natureza. As árvores fornecem sombra, fertilidade e abrigo para a fauna silvestre.</p>
+                    </div>
+                    <div class="dica-emoji">🌳</div>
+                </div>
+                <div class="dica-item reveal">
+                    <div class="dica-num">05</div>
+                    <div class="dica-content">
+                        <h3>Controle Biológico de Pragas</h3>
+                        <p>Usar predadores naturais como joaninhas e vespinhas, plantas repelentes e armadilhas ecológicas é mais seguro para o agricultor, o consumidor e o meio ambiente.</p>
+                    </div>
+                    <div class="dica-emoji">🐞</div>
+                </div>
+                <div class="dica-item reveal">
+                    <div class="dica-num">06</div>
+                    <div class="dica-content">
+                        <h3>Irrigação por Gotejamento</h3>
+                        <p>Levar a água diretamente às raízes reduz o desperdício em até 50% comparado à irrigação convencional. É eficiente, econômico e mantém o solo na umidade ideal.</p>
+                    </div>
+                    <div class="dica-emoji">💧</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUIZ ===== -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <div class="section-label">🧠 Teste seus conhecimentos</div>
+            <h2 class="section-title">Quiz de Sustentabilidade Agrícola</h2>
+            <p class="section-sub">10 perguntas para ver o quanto você já sabe sobre agricultura sustentável!</p>
+
+            <div class="quiz-box" id="quizBox">
+                <!-- Tela de início -->
+                <div id="quizStart" class="quiz-screen">
+                    <div class="quiz-start-icon">🌾</div>
+                    <h3>Pronto para o desafio?</h3>
+                    <p>Responda 10 perguntas sobre sustentabilidade e agricultura. Ao final, descubra seu nível de conhecimento!</p>
+                    <button class="btn-primary" onclick="startQuiz()">Começar Quiz!</button>
+                </div>
+
+                <!-- Tela de pergunta -->
+                <div id="quizQuestion" class="quiz-screen hidden">
+                    <div class="quiz-progress">
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar-fill" id="progressBar"></div>
+                        </div>
+                        <span class="progress-label" id="progressLabel">Pergunta 1 de 10</span>
+                    </div>
+                    <h3 class="question-text" id="questionText"></h3>
+                    <div class="options-grid" id="optionsGrid"></div>
+                    <div class="quiz-feedback hidden" id="quizFeedback"></div>
+                    <button class="btn-primary btn-next hidden" id="btnNext" onclick="nextQuestion()">Próxima →</button>
+                </div>
+
+                <!-- Tela de resultado -->
+                <div id="quizResult" class="quiz-screen hidden">
+                    <div class="result-emoji" id="resultEmoji"></div>
+                    <h3 id="resultTitle"></h3>
+                    <div class="result-score">
+                        <span id="resultScore"></span>
+                        <span class="result-total">/ 10</span>
+                    </div>
+                    <p class="result-msg" id="resultMsg"></p>
+                    <div class="result-bar-wrap">
+                        <div class="result-bar-fill" id="resultBar"></div>
+                    </div>
+                    <button class="btn-primary" onclick="restartQuiz()">Tentar novamente 🔄</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">🌿 AgroSmart</div>
+                    <p>Educando para um futuro mais verde, um conhecimento de cada vez.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#dicas">Práticas</a>
+                    <a href="#quiz">Quiz</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato Fictício</h4>
+                    <p>📧 contato@agrosmart.edu.br</p>
+                    <p>📞 (11) 9000-1234</p>
+                    <p>📍 São Paulo, Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgroSmart · Cultivando o Futuro Verde · Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
